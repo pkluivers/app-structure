@@ -1,0 +1,18 @@
+/*! Utilities - Clearfix */
+
+/**
+ * Standard clearfix hack used for clearing floats contained in a block level
+ * element as by (http://blog.teamtreehouse.com/a-better-clearfix-with-sass).
+ */
+
+ @mixin clearfix {
+
+ 	&:after {
+ 		content: '';
+
+ 		display: table;
+
+ 		clear: both;
+ 	}
+
+ }

@@ -1,0 +1,50 @@
+/*! Settings - Colors */
+
+/**
+ * All global site colors are contained within this document.
+ * Any color should always be defined and referenced here.
+ */
+
+/* Base colors
+   ------------------------------------------------------------------------- */
+
+$color-white:			#fff;
+$color-black:			#000;
+
+/* Text colors
+   ------------------------------------------------------------------------- */
+
+$color-body:			#9b9b9b;
+$color-anchors:			inherit;
+
+/* Document colors
+   ------------------------------------------------------------------------- */
+
+/**
+ * All colors are set to their defaults. Defaults should always be kept
+ * in a comment when overwritten.
+ */
+
+$color-select:			#b4d5fe;
+$color-placeholder:		#c7c7cd;
+$color-border:			#dfdfdd;
+
+// Global colors.
+$color-primary:			#ffffff; //define color
+$color-secondary:		#000000; //define color
+
+/* Background colors
+   ------------------------------------------------------------------------- */
+
+$color-background-body:	#efefef;
+
+/* Functional colors
+   ------------------------------------------------------------------------- */
+
+$color-facebook: #3b5998;
+$color-twitter: #00a0d1;
+$color-linkedin: #0e76a8;
+$color-youtube: #c4302b;
+$color-pinterest: #c8232c;
+$color-instagram: #3f729b;
+$color-googleplus: #db4a39;

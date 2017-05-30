@@ -1,0 +1,15 @@
+/*! Utilities - Font awesome */
+
+/**
+ * A quick icon font mixin which utilizes FontAwesome to generate unicode icons in a
+ * before and/or after psuedo element selector using the content attribute.
+ */
+
+@mixin fontawesome($icon, $font-size: inherit, $color: inherit) {
+  content: $icon;
+
+  font-family: $font-family-icon;
+  font-size: $font-size;
+  color: $color;
+
+}

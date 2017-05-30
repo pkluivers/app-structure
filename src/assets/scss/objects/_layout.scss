@@ -1,0 +1,111 @@
+/*! Objects - Layout */
+
+/**
+ * Layout is a flex based display model element.
+ */
+
+.o-layout {
+  display: flex;
+
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  // @include breakpoint($mobilexxs) {
+  //   width: 100%;
+  //   max-width: 100%;
+
+  //   display: block;
+  // }
+}
+
+/**
+ * Keeps working on mobile
+ */
+
+.o-layout--mobile {
+  display: flex !important;
+
+  width: auto !important;
+  max-width: auto !important;
+}
+
+/**
+ * Align content in the middle of their layout items.
+ */
+
+.o-layout--center {
+  align-items: center;
+}
+
+
+/**
+ * Justifies items left and right 
+ */
+
+.o-layout--justify {
+  justify-content: space-between;
+}
+
+
+
+/**
+ * Align content at the bottom of their layout items.
+ */
+
+.o-layout--end {
+  align-items: flex-end;
+}
+
+/**
+ * Equal heights layout hack.
+ */
+
+.o-layout--stretch > [class*="o-layout__item-"] {
+  display: flex;
+}
+
+.o-layout--stretch > [class*="o-layout__item-"] > * {
+  width: 100%;
+}
+
+/**
+ * Default layout items.
+ * By default, layout items don't have any gutters.
+ * Gutters can be provided by using a `.container` child within a layout item.
+ */
+
+@for $i from 1 through $columns {
+
+  .o-layout__item-#{$i} {
+    position: relative; // experimental
+
+    padding: $spacing-small;
+
+    flex-basis: (100% * ($i / $columns));
+
+    max-width: (100% * ($i / $columns));
+
+    // @include breakpoint($mobilexxs) {
+    //   width: 100%;
+    //   max-width: 100%;
+      
+    //   display: block;
+
+    //   padding: $spacing-small 0;
+    // }
+  }
+
+}
+
+.o-layout__item--bleed {
+  padding: 0;
+}
+
+.o-layout__item--leftbleed {
+  padding-left: 0;
+}
+
+.o-layout__item--rightbleed {
+  padding-right: 0;
+}

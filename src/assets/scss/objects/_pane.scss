@@ -1,0 +1,32 @@
+/*! Objects - pane */
+
+/**
+ * A pane is a full width band with additional padding on each side to provide some
+ * space on narrow viewport.
+ */
+
+.o-pane {
+  display: block;
+
+  padding-right: $spacing-small;
+  padding-left: $spacing-small;
+}
+
+/**
+ * Declare here the pane modifiers for background colors etc.
+ */
+
+.o-pane--contrast {
+  background: $color-white;
+}
+
+/**
+ * The inner pane provides a buffer between the top and bottom of the pane
+ * and its contents. The inner padding contracts `$spacing-small` to take into
+ * account the mandatory padding on any element within the inner.
+ */
+
+.o-pane__inner {
+  padding-top: $spacing-huge;
+  padding-bottom: $spacing-huge;
+}

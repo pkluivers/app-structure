@@ -1,0 +1,17 @@
+/*! Settings - Spacings */
+
+/**
+ * Spacings are based on and multiplied by the defined
+ * vertical rythm.
+ */
+
+// Vertical rythm
+
+$rhythm:                  30px;
+
+// Spacing multipliers
+
+$spacing-small:           ($rhythm/2);
+$spacing-default:         $rhythm;
+$spacing-large:           ($rhythm+($rhythm/2));
+$spacing-huge:            ($rhythm*2);

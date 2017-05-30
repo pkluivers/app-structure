@@ -1,0 +1,13 @@
+/*! Utilities - Clearfix */
+
+/**
+ * The container mixin defines the max width of a content container and
+ * auto centers it.
+ */
+
+ @mixin container($width: $container) {
+ 	max-width: $width;
+
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }

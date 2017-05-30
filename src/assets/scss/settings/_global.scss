@@ -1,0 +1,28 @@
+/*! Settings - Global */
+
+/**
+ * The max width of a container.
+ */
+
+$container:               1200px;
+
+/**
+ * The amount of columns that span a container. All grid calculations are
+ * based on this number.
+ */
+
+$columns:                 12;
+
+/* Paths
+   ------------------------------------------------------------------------- */
+
+/**
+ * Relative path variables for images and fonts.
+ */
+
+$path-img:                '../img/';
+
+/* Border radius
+   ------------------------------------------------------------------------- */
+   
+$border-radius:           3px;

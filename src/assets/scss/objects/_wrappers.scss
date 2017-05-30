@@ -1,0 +1,12 @@
+/* ==========================================================================
+   objects.wrapper
+   ========================================================================== */
+
+/**
+ * Wrappers act as containers. Modified wrappers can have different max-width
+ * using the container @mixin which can be referenced at (_tools.mixins).
+ */
+
+.o-wrapper {
+  @include container();
+}

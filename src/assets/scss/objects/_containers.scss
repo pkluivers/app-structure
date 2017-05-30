@@ -1,0 +1,22 @@
+/*! Objects - container */
+
+/**
+ * Containers are block level elements and are used to box of content with paddings on all sides.
+ * This is mainly used within layout items to provide gutters or within wrappers where no layout is present.
+ * Containers always use `display: block`!
+ */
+
+.o-container {
+  display: block;
+
+  padding: $spacing-small;
+}
+
+/** 
+ * Container modifiers also use `display: block` so the modified container can be addressed directly without the
+ * base class of `.container`. This reduses HTML bloat.
+ */
+
+.o-container--obese {
+  padding: $spacing-default;
+}
